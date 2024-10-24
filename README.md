@@ -1,55 +1,105 @@
-# site
-vscode e pa
-<html lang="pt-BR">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <title>Guiminamflix</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planktonflix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #4B0082; /* Roxo */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4B0082; /* Roxo */
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: white;
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .movie {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .movie img {
+      width: 100%;
+      max-width: 300px;
+      border: 2px solid white;
+    }
+
+    .movie a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #8A2BE2; /* Roxo mais claro */
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .movie a:hover {
+      background-color: #9370DB; /* Cor roxa mais clara ao passar o mouse */
+    }
+
+    footer {
+      background-color: #4B0082;
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+  </style>
 </head>
-
 <body>
-    <header>GUIMINAMFLIX</header>
 
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>ATRAVÉS DO ARANHAVERSO</h1>
-            <p>#homem-aranha</p>
-        </div>
+  <header>
+    <h1>Planktonflix</h1>
+  </header>
 
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
+  <main>
+    <div class="movie">
+      <h2>Coringa</h2>
+      <img src="https://m.media-amazon.com/images/I/71px4oDqT8L._AC_SY679_.jpg" alt="Coringa Poster">
+      <br>
+      <a href="https://www.youtube.com/watch?v=t433PEQGErc" target="_blank">Assistir Coringa</a>
+    </div>
 
-    <section class="categoria">
-        <h2>Filmes e séries</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
-                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
-                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
-                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
-            </a>
-        </div>
-    </section>
+    <div class="movie">
+      <h2>Corra!</h2>
+      <img src="https://m.media-amazon.com/images/I/81E6cQ-wKmL._AC_SY679_.jpg" alt="Corra! Poster">
+      <br>
+      <a href="https://www.youtube.com/watch?v=DzfpyUB60YY" target="_blank">Assistir Corra!</a>
+    </div>
+
+    <div class="movie">
+      <h2>Atividade Paranormal 2</h2>
+      <img src="https://m.media-amazon.com/images/I/71DhxWYY19L._AC_SY679_.jpg" alt="Atividade Paranormal 2 Poster">
+      <br>
+      <a href="https://www.youtube.com/watch?v=07XbSk7Rjt4" target="_blank">Assistir Atividade Paranormal 2</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Planktonflix - Todos os direitos reservados.</p>
+  </footer>
 
 </body>
-
 </html>
